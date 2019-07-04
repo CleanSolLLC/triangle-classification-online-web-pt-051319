@@ -20,7 +20,7 @@ class Triangle
 
     elsif
       all[0] == all[1] || all[0] == all[2]
-       || all[1] == all[2] && not all.include?(0))
+       || all[1] == all[2] && not all.include?(0)
       :isosceles
     end
 
