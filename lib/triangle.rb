@@ -24,9 +24,10 @@ class Triangle
        raise TriangleError
      else
        puts "still investigating"
-     end
-   end
- end
+        end
+      end
+    end
+  end
     #  else
     #    @new_array << side
     #    end
