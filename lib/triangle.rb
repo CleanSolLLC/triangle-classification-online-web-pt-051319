@@ -23,23 +23,19 @@ class Triangle
     #call error if sum of 2 sides is less than side num 3
     raise TriangleError if all.any?{|side| side <= 0}
 
-    if all[0] +all[1] < all.sort.last
-      begin
-        raise TriangleError
-      rescue TriangleError
-      end
-
     #all sides equal
-    elsif all[0] == all[1] && all[1] == all[2]
+    if all[0] == all[1] && all[1] == all[2]
       :equilateral
 
     elsif
-      all[1] == all[2] || all[0] == all[2] || all[0] == all[1]
+      all[1] == all[2] || all[0] == all[2] || all[0] == all[1] && (all[0] +all[1] > all.sort.last)
       :isosceles
 
-    else all[0] != all[1] && all[1] != all[2]
+    elsif all[0] != all[1] && all[1] != all[2] && (all[0] +all[1] > all.sort.last)
       :scalene
 
+    else
+      raise TriangleError
     end
   end
 
