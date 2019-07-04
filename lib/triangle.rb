@@ -28,7 +28,7 @@ class Triangle
     binding.pry
 
   class TriangleError < StandardError
-    def message 
+    def message
       "Parameters viloate laws of triangle inequality"
     end
   end
