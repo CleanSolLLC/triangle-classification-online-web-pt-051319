@@ -27,7 +27,6 @@ class Triangle
       begin
         raise TriangleError
       rescue TriangleError
-        all.clear
       end
 
     #all sides equal
