@@ -22,7 +22,8 @@ class Triangle
       :equilateral
     end
 
-    if all.each{|side| @side.include?(side)}
+    if all.each do |side| 
+      @sides.include?(side)
       binding.pry
     end
 
