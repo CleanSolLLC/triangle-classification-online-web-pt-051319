@@ -13,9 +13,18 @@ class Triangle
     binding.pry
   end
 
+  def all
+    @sides
+  end
 
-  #def kind
+  def kind
+    if @x == @y && @y == @z
+      :equilateral
 
+    elsif all.each{|side| @side.include?(side)}
+      binding.pry
+
+    end
   #end
 
     # x = y = z :equilateral
