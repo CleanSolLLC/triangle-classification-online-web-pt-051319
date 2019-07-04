@@ -26,26 +26,15 @@ class Triangle
     elsif
       all[1] == all[2] || all[0] == all[2] || all[0] == all[1]
       :isosceles
+      
     elsif
       all[0] != all[1] && all[1] != all[2]
       :scalene
-    elsif
-      all[0] == 0 && all[1] == 0 && all[2] == 0
-      raise TriangleError
+
      else
        puts "still investigating"
      end
    end
-    #  else
-    #    @new_array << side
-    #    end
-    #  end
-
-    # x = y = z :equilateral
-
-    # z < x+7 - :scalene
-
-    # x=y = Z - :isosceles
 
   class TriangleError < StandardError
     def message
