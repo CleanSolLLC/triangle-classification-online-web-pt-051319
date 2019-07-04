@@ -19,10 +19,9 @@ class Triangle
     if all[0] == all[1] || all[1] == all[2]
       :equilateral
 
-    else
+    elsif
       all.each do |side|
       if side <=0
-      #triangle has no sides
        raise TriangleErrorlearn
      end
    end
@@ -31,7 +30,6 @@ class Triangle
     #    @new_array << side
     #    end
     #  end
-    end
 
     # x = y = z :equilateral
 
