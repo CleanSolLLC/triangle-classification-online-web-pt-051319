@@ -25,8 +25,7 @@ class Triangle
 
     if all[0] +all[1] < all.sort.last
         raise TriangleError
-        all_clear
-
+        all.delete
     #all sides equal
     elsif all[0] == all[1] && all[1] == all[2]
       :equilateral
