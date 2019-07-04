@@ -19,7 +19,7 @@ class Triangle
     if all.any?{|side| side <= 0}
      raise TriangleError
 
-    elsif 
+    elsif
       long_side = all.sort.last
         if all[0] + all[1] < long_side
           raise TriangleError
