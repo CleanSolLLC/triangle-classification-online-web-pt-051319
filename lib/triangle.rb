@@ -33,7 +33,7 @@ class Triangle
     #call error on sides with 0 or less than 0
     #call error if sum of 2 sides is less than side num
 
-    raise TriangleError if not :equilateral, :isosceles, :scalene
+    raise TriangleError if not :equilateral || :isosceles || :scalene
 
   end
 
