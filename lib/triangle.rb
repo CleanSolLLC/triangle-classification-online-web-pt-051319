@@ -19,8 +19,7 @@ class Triangle
     if all[0] == all[1] || all[1] == all[2]
       :equilateral
     elsif
-      all.each do |side|
-      if side <=0
+      all.any?{|side| side <=0}
        raise TriangleError
      else
        puts "still investigating"
