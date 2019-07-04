@@ -27,8 +27,6 @@ class Triangle
       begin
         raise TriangleError
       rescue
-        TriangleError
-        puts TriangleError.message
       end
 
     #all sides equal
