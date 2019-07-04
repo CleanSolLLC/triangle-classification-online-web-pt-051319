@@ -23,13 +23,13 @@ class Triangle
 
     elsif @sides.each do |side|
       @sides.include?(side)
-      binding.pry
       :isosceles
       end
 
     else
       :scalene
     end
+    binding.pry
   end
 
     # x = y = z :equilateral
