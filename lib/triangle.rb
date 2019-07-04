@@ -24,8 +24,8 @@ class Triangle
     raise TriangleError if all.any?{|side| side <= 0}
 
     if all[0] +all[1] < all.sort.last
+      binding.pry
         raise TriangleError
-        all.delete
     #all sides equal
     elsif all[0] == all[1] && all[1] == all[2]
       :equilateral
