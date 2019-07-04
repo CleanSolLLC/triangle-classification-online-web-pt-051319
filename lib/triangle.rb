@@ -10,7 +10,7 @@ class Triangle
     @y = y
     @z = z
     @sides = @x, @y, @z
-    
+
   end
 
   def all
