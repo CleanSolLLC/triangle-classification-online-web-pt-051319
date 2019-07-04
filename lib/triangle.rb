@@ -27,7 +27,7 @@ class Triangle
   def kind
     if no_side?
         raise TriangleError
-      elsif all[0] +all[1] < max_side
+      elsif all[0] +all[1] <= max_side
         begin
           raise TriangleError
         rescue TriangleError
