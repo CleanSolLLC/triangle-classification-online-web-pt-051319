@@ -4,6 +4,7 @@ class Triangle
   attr_accessor :x, :y, :z
 
   @sides = []
+  @new_array = []
 
   def initialize (x, y, z)
     @sides = x, y, z
@@ -11,13 +12,21 @@ class Triangle
 
   def all
     @sides
-
   end
 
   def kind
-    :equilateral if all[0] == all[1] || all[1] == all[2]
-    binding.pry
-  end
+    #all sides equal
+    :equilateral if all[0] == all[1] || all[1] == all[2] 
+
+    all.map do |side|
+      if side <=0
+        #triangle has no sides
+        raise TriangleError 
+      else
+        all << side  
+        end
+      end
+    end
 
     # x = y = z :equilateral
 
