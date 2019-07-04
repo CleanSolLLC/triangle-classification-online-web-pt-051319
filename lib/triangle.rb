@@ -38,6 +38,7 @@ class Triangle
       else all[0] != all[1] && all[1] != all[2]
         :scalene
       end
+      end
   end
 
   class TriangleError < StandardError
