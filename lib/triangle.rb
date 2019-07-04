@@ -11,7 +11,6 @@ class Triangle
     @z = z
     @sides = @x, @y, @z
     binding.pry
-
   end
 
 
