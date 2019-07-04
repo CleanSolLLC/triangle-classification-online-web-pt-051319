@@ -25,9 +25,10 @@ class Triangle
       rescue
         TriangleError => error
         puts error.message
+    end
 
     #all sides equal
-    elsif all[0] == all[1] && all[1] == all[2]
+    if all[0] == all[1] && all[1] == all[2]
       :equilateral
 
     elsif
