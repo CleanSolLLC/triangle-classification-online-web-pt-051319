@@ -25,7 +25,7 @@ class Triangle
   end
 
   def kind
-    if no_side? || all[0] +all[1] <= max_side
+    if no_side? || (all[0] +all[1] <= max_side)
         raise TriangleError
     elsif all[0] == all[1] && all[1] == all[2]
       :equilateral
