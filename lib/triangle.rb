@@ -21,7 +21,7 @@ class Triangle
     if @x == @y && @y == @z
       :equilateral
 
-    elsif all.each do |side|
+    elsif @sides.each do |side|
       @sides.include?(side)
       binding.pry
       :isosceles
