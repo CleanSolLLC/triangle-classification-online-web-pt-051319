@@ -29,6 +29,7 @@ class Triangle
           raise TriangleError
       elsif all[0] +all[1] <= max_side
           raise TriangleError
+          binding.pry
     else
 
       if all[0] == all[1] && all[1] == all[2]
