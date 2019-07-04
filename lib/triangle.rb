@@ -22,9 +22,8 @@ class Triangle
       :equilateral
     end
 
-    if @sides.each do |side|
+    else @sides.each do |side|
       @sides.include?(side)
-      :isosceles
       binding.pry
       end
     end
