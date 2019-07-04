@@ -25,6 +25,7 @@ class Triangle
     if all.each do |side|
       @sides.include?(side)
       binding.pry
+      end
     end
 
   end
