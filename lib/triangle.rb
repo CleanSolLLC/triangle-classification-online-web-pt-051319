@@ -27,7 +27,6 @@ class Triangle
   def kind
     if no_side
         raise TriangleError
-    end
 
     if all[0] == all[1] && all[1] == all[2] && no_side !=0
       :equilateral
@@ -38,7 +37,7 @@ class Triangle
       :scalene
     else
 
-    raise TriangleError if not :isosceles
+    raise TriangleError
 
     end
 
