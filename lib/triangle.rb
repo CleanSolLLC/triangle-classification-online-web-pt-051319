@@ -29,9 +29,11 @@ class Triangle
 
     elsif
       all[1] == all[2] || all[0] == all[2] || all[0] == all[1] && (all[0] +all[1] > all.sort.last)
+      binding.pry
       :isosceles
 
     elsif all[0] != all[1] && all[1] != all[2] && (all[0] +all[1] > all.sort.last)
+      binding.pry
       :scalene
 
     else
