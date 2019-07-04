@@ -18,11 +18,12 @@ class Triangle
     #all sides equal
     if all[0] == all[1] || all[1] == all[2]
       :equilateral
-
     elsif
       all.each do |side|
       if side <=0
-       raise TriangleErrorlearn
+       raise TriangleError
+     else
+       puts "still investigating"
      end
    end
  end
