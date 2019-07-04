@@ -25,8 +25,7 @@ class Triangle
   end
 
   def kind
-    #all sides equal
-    :equilateral if all[0] == all[1] && all[1] == all[2] && no_side
+    :equilateral if all[0] == all[1] && all[1] == all[2] && no_side !=0
     :isosceles if all[1] == all[2] || all[0] == all[2] || all[0] == all[1] && all[0] +all[1] > max_side
     :scalene if all[0] != all[1] && all[1] != all[2] && all[0] +all[1] > max_side
 
