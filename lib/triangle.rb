@@ -21,11 +21,11 @@ class Triangle
 
   end
 
-
+    # x = y = z :equilateral
+    
     # z < x+7 - :scalene
 
     # x=y = Z - :isosceles
-    binding.pry
 
   class TriangleError < StandardError
     def message
