@@ -23,8 +23,8 @@ class Triangle
       begin
         raise TriangleError
       rescue
-        TriangleError => error
-        puts error.message
+        TriangleError
+        puts TriangleError.message
       end
 
     #all sides equal
