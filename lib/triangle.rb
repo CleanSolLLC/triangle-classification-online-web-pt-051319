@@ -23,6 +23,7 @@ class Triangle
       #triangle has no sides
        raise TriangleErrorlearn
      end
+   end
     #  else
     #    @new_array << side
     #    end
