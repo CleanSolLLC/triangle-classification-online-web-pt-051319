@@ -15,8 +15,13 @@ class Triangle
   end
 
   def kind
+    #call error on sides with 0 or less than 0
+    if all.any?{|side| side <= 0}
+     raise TriangleError
+
     #all sides equal
-    if all[0] == all[1] && all[1] == all[2]
+    elsif condition
+     all[0] == all[1] && all[1] == all[2] 
       :equilateral
 
     elsif
@@ -28,9 +33,6 @@ class Triangle
     elsif
       all[0] == 0 && all[1] == 0 && all[2] == 0
       raise TriangleError
-    elsif
-      all.any?{|side| side < 0}
-       raise TriangleError
      else
        puts "still investigating"
      end
