@@ -25,7 +25,8 @@ class Triangle
       binding.pry
 
     end
-  #end
+
+  end
 
     # x = y = z :equilateral
 
