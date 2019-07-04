@@ -6,26 +6,17 @@ class Triangle
   @sides = []
 
   def initialize (x, y, z)
-    @x = x
-    @y = y
-    @z = z
-    @sides = @x, @y, @z
-    binding.pry
+    @sides = x, y, z
   end
 
-  def all
+  def self.all
     @sides
   end
 
   def kind
-    if @x == @y && @y == @z
-      :equilateral
-
-    else @sides.each do |side|
-      @sides.include?(side)
+    all.each do |side|
       binding.pry
       end
-    end
   end
 
     # x = y = z :equilateral
