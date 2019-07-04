@@ -28,8 +28,10 @@ class Triangle
     if no_side?
         raise TriangleError
       elsif all[0] +all[1] < max_side
-        binding.pry
-        raise TriangleError
+        begin
+          raise TriangleError
+        rescue TriangleError
+        end
     else
 
       if all[0] == all[1] && all[1] == all[2]
