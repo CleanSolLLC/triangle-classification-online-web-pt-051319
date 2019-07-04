@@ -16,17 +16,12 @@ class Triangle
 
   def kind
     #call error on sides with 0 or less than 0
-    if all.any?{|side| side <= 0}
-     raise TriangleError
-
-    elsif
-      long_side = all.sort.last
-        if all[0] + all[1] < long_side
-          raise TriangleError
-        end
-
+    #call error if sum of 2 sides is less than side num 3
+    raise TriangleError if all.any?{|side| side <= 0}
+    raise TriangleError if all[0] +all[1] < all.sort.last 
+    
     #all sides equal
-    elsif all[0] == all[1] && all[1] == all[2]
+    if all[0] == all[1] && all[1] == all[2]
       :equilateral
 
     elsif
