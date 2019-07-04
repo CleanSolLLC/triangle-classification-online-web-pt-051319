@@ -25,22 +25,15 @@ class Triangle
   end
 
   def kind
-    if no_side?
+    if no_side? || all[0] +all[1] <= max_side
           raise TriangleError
-      elsif all[0] +all[1] <= max_side
-        binding.pry
-          raise TriangleError
-
-    else
-
-      if all[0] == all[1] && all[1] == all[2]
+      elsif all[0] +all[1] <= if all[0] == all[1] && all[1] == all[2]
         :equilateral
       elsif all[1] == all[2] || all[0] == all[2] || all[0] == all[1]
         :isosceles
-      else all[0] != all[1] && all[1] != all[2]
+      elseif all[0] != all[1] && all[1] != all[2]
         :scalene
-      end
-      end
+    end
   end
 
   class TriangleError < StandardError
