@@ -28,10 +28,7 @@ class Triangle
     if no_side?
           raise TriangleError
       elsif all[0] +all[1] <= max_side
-        begin
           raise TriangleError
-        rescue TriangleError
-        end
     end
 
       if all[0] == all[1] && all[1] == all[2]
