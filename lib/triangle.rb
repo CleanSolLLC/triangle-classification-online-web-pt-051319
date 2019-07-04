@@ -40,7 +40,7 @@ class Triangle
       end
     end
   end
-  
+
   class TriangleError < StandardError
     def message
       "Parameters viloate laws of triangle inequality"
