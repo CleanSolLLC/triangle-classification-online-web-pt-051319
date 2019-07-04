@@ -27,7 +27,7 @@ class Triangle
       binding.pry
       end
 
-    else 
+    else
       :scalene
     end
   end
