@@ -15,7 +15,7 @@ class Triangle
   end
 
   def all_clear
-    @all.clear
+    @sides.clear
   end
 
   def kind
