@@ -26,6 +26,7 @@ class Triangle
 
   def kind
     if no_side? || (all[0] +all[1] <= max_side)
+      begin
         raise TriangleError
       rescue  TriangleError
     end
