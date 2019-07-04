@@ -27,12 +27,9 @@ class Triangle
       all[1] == all[2] || all[0] == all[2] || all[0] == all[1]
       :isosceles
 
-    elsif all[0] != all[1] && all[1] != all[2]
+    else all[0] != all[1] && all[1] != all[2]
       :scalene
-
-     else
-       puts "still investigating"
-     end
+      
    end
 
   class TriangleError < StandardError
