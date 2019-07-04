@@ -14,8 +14,8 @@ class Triangle
     @sides
   end
 
-  def all_clear
-    @sides.clear
+  def max_side #longest side of triangle
+    long_side = all.sort.last
   end
 
   def kind
@@ -29,11 +29,11 @@ class Triangle
       :equilateral
 
     elsif
-      all[1] == all[2] || all[0] == all[2] || all[0] == all[1] && (all[0] +all[1] > all.sort.last)
+      all[1] == all[2] || all[0] == all[2] || all[0] == all[1] && all[0] +all[1] > max_side
       binding.pry
       :isosceles
 
-    elsif all[0] != all[1] && all[1] != all[2] && (all[0] +all[1] > all.sort.last)
+    elsif all[0] != all[1] && all[1] != all[2] && all[0] +all[1] > max_side
       binding.pry
       :scalene
 
