@@ -10,13 +10,10 @@ class Triangle
     @y = y
     @z = z
     @sides = @x, @y, @z
-
-  end
-
-  def all
-    @sides
     binding.pry
+
   end
+
 
   #def kind
 
