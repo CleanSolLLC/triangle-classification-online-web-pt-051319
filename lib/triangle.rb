@@ -18,11 +18,11 @@ class Triangle
     #all sides equal
     if all[0] == all[1] && all[1] == all[2]
       :equilateral
-      
+
     elsif
       all[1] == all[2] || all[0] == all[2] || all[0] == all[1]
       :isosceles
-    elsif 
+    elsif
       all[0] <> all[1] && all[1] <> all[2]
       :scalene
     elsif
