@@ -26,7 +26,7 @@ class Triangle
       all[0] != all[1] && all[1] != all[2]
       :scalene
     elsif
-      if all[0][1][2] == 0
+      all[0][1][2] == 0
       raise TriangleError
     elsif
       all.any?{|side| side < 0}
