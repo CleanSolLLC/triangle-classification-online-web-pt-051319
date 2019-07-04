@@ -32,7 +32,7 @@ class Triangle
     elsif all[0] != all[1] && all[1] != all[2] && all[0] +all[1] > max_side
       :scalene
     else
-      
+
     raise TriangleError
 
   end
