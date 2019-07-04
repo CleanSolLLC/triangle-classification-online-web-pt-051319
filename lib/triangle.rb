@@ -20,6 +20,7 @@ class Triangle
     raise TriangleError if all.any?{|side| side <= 0}
 
     if all[0] +all[1] < all.sort.last
+      binding.pry
       begin
         raise TriangleError
       rescue
