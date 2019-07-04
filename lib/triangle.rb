@@ -20,7 +20,6 @@ class Triangle
   def kind
     if @x == @y && @y == @z
       :equilateral
-    end
 
     else @sides.each do |side|
       @sides.include?(side)
