@@ -18,10 +18,13 @@ class Triangle
     #all sides equal
     if all[0] == all[1] || all[1] == all[2]
       :equilateral
+    elsif 
+      all[1] == all[2] || all[0] == all[2] || all[0] == all[1]
+      :isosceles
     elsif
       raise TriangleError
     elsif
-      all.any?{|side| side =< 0}
+      all.any?{|side| side < 0}
        raise TriangleError
      else
        puts "still investigating"
