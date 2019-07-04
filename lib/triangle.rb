@@ -18,10 +18,11 @@ class Triangle
     #all sides equal
     :equilateral if all[0] == all[1] || all[1] == all[2]
 
-    #all.each do |side|
-    #  if side <=0
-        #triangle has no sides
-    #    raise TriangleErrorlearn
+    all.each do |side|
+      if side <=0
+      #triangle has no sides
+       raise TriangleErrorlearn
+     end
     #  else
     #    @new_array << side
     #    end
