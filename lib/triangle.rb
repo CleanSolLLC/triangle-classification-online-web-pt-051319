@@ -15,7 +15,7 @@ class Triangle
   end
 
   def kind
-    equilateral if all[0] == all[1] == all[2]
+    equilateral if all[0] == all[1] || all[1] == all[2]
 
     isosceles if all[0] == all[1] || all[0] == all[2] || all[1] == all[2] && all.any?{|side| side != 0}
        binding.pry
