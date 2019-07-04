@@ -19,7 +19,7 @@ class Triangle
     if all[0] == all[1] || all[1] == all[2]
       :equilateral
 
-    elsif
+    else
       all.each do |side|
       if side <=0
       #triangle has no sides
