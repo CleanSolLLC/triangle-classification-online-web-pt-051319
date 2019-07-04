@@ -23,8 +23,8 @@ class Triangle
 
     elsif all.each do |side|
       @sides.include?(side)
-      :isosceles
       binding.pry
+      :isosceles
       end
 
     else
