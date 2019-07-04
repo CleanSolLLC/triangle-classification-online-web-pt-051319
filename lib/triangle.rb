@@ -16,14 +16,14 @@ class Triangle
 
   def kind
     #all sides equal
-    :equilateral if all[0] == all[1] || all[1] == all[2] 
+    :equilateral if all[0] == all[1] || all[1] == all[2]
 
     all.map do |side|
       if side <=0
         #triangle has no sides
-        raise TriangleError 
+        raise TriangleError
       else
-        all << side  
+        all << side
         end
       end
     end
