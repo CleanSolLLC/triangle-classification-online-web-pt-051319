@@ -23,9 +23,9 @@ class Triangle
       begin
         raise TriangleError
       rescue
-        TriangleError => error 
-        puts error.message 
-        
+        TriangleError => error
+        puts error.message
+
     #all sides equal
     elsif all[0] == all[1] && all[1] == all[2]
       :equilateral
