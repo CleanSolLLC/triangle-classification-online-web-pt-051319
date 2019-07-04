@@ -20,8 +20,7 @@ class Triangle
      raise TriangleError
 
     #all sides equal
-    elsif condition
-     all[0] == all[1] && all[1] == all[2]
+    elsif all[0] == all[1] && all[1] == all[2]
       :equilateral
 
     elsif
