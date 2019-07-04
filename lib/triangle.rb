@@ -10,6 +10,7 @@ class Triangle
     @y = y
     @z = z
     @sides = @x, @y, @z
+    
   end
 
   def all
@@ -17,9 +18,9 @@ class Triangle
     binding.pry
   end
 
-  def kind
+  #def kind
 
-  end
+  #end
 
     # x = y = z :equilateral
 
