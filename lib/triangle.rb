@@ -24,8 +24,10 @@ class Triangle
       :equilateral
 
     elsif
-      all[1] == all[2] || all[0] == all[2] || all[0] == all[1]
-      :isosceles
+    all[1] == all[2] && all[1] + all[2] > all[3] ||
+    all[0] == all[2] && all[0] + all[2] > all[3] ||
+    all[0] == all[1] && all[0] + all[1] > all[2]
+    :isosceles
 
     elsif all[0] != all[1] && all[1] != all[2]
       :scalene
