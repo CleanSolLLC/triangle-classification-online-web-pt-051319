@@ -9,7 +9,7 @@ class Triangle
     @sides = x, y, z
   end
 
-  def self.all
+  def all
     @sides
   end
 
