@@ -21,7 +21,7 @@ class Triangle
     elsif
       all.any?(0)
       raise TriangleError
-    elsif 
+    elsif
       all.any?{|side| side < 0}
        raise TriangleError
      else
