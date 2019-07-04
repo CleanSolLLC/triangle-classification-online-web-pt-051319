@@ -19,15 +19,15 @@ class Triangle
     long_side = all.sort.last
   end
 
-  def no_side
+  def no_side?
     #not a triange if any side = 0
     all.any?{|side| side <= 0}
   end
 
   def kind
-    if no_side
+    if no_side?
         raise TriangleError
-      elsif all[0] +all[1] > max_side
+      elsif all[0] +all[1] < max_side
         raise TriangleError
     else
 
@@ -38,11 +38,9 @@ class Triangle
       else all[0] != all[1] && all[1] != all[2]
         :scalene
       end
-
     end
   end
-
-
+  
   class TriangleError < StandardError
     def message
       "Parameters viloate laws of triangle inequality"
