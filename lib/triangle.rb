@@ -14,9 +14,11 @@ class Triangle
 
   def all
     @sides
+    binding.pry
   end
 
   def kind
+
   end
 
 
@@ -26,6 +28,9 @@ class Triangle
     binding.pry
 
   class TriangleError < StandardError
+    def message 
+      "Parameters viloate laws of triangle inequality"
+    end
   end
 
 end
