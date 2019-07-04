@@ -19,6 +19,7 @@ class Triangle
     #call error if sum of 2 sides is less than side num 3
     raise TriangleError if all.any?{|side| side <= 0}
     raise TriangleError if all[0] +all[1] < all.sort.last
+    binding.pry
 
     #all sides equal
     if all[0] == all[1] && all[1] == all[2]
