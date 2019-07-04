@@ -20,14 +20,16 @@ class Triangle
   def kind
     if @x == @y && @y == @z
       :equilateral
-    end
 
-    if all.each do |side|
+    elsif all.each do |side|
       @sides.include?(side)
+      :isosceles
       binding.pry
       end
-    end
 
+    else 
+      :scalene
+    end
   end
 
     # x = y = z :equilateral
